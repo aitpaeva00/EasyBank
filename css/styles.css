@@ -54,7 +54,7 @@
             align-items: center;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
-            width: 100%; /* Make the option take the full width */
+            width: 100%; 
         }
 
         .option:last-child {
@@ -64,7 +64,7 @@
         .option-content {
             display: flex;
             align-items: center;
-            flex: 1; /* Allow label to take available space */
+            flex: 1; 
         }
 
         .option label {
@@ -73,7 +73,7 @@
             gap: 10px;
             font-size: 16px;
             color: #333;
-            flex: 1; /* Allow label to take available space */
+            flex: 1;
         }
 
         .option label img {
@@ -83,8 +83,8 @@
 
         .option-details {
             display: flex;
-            flex-direction: column; /* Stack title and subtitle */
-            margin-left: 10px; /* Space between icon and title */
+            flex-direction: column;
+            margin-left: 10px;
         }
 
         .subtitle {
