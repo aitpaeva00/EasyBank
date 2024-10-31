@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">CARD</div>
+    <div class="card">
+        <img src="img/card.png" alt="Card Image"> <!-- Use your card image here -->
+    </div>
+    <div class="options">
+        <div class="option">
+            <div class="option-content">
+                <label>
+                    <img src="img/lock.svg" alt="Lock Icon"> 
+                    <div class="option-details">
+                        Lock card
+                        <span class="subtitle">You can unblock it later</span>
+                    </div>
+                </label>
+                <div class="toggle" onclick="toggle(this)"></div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-content">
+                <label>
+                    <img src="img/plane.svg" alt="Airplane Icon"> 
+                    <div class="option-details">
+                        Payments abroad
+                        <span class="subtitle">Enable your card abroad</span>
+                    </div>
+                </label>
+                <div class="toggle active" onclick="toggle(this)"></div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-content">
+                <label>
+                    <img src="img/laptop.svg" alt="Online Icon"> 
+                    <div class="option-details">
+                        Online payments
+                        <span class="subtitle">Enable online transactions</span>
+                    </div>
+                </label>
+                <div class="toggle" onclick="toggle(this)"></div>
+            </div>
+        </div>
+        <div class="option">
+            <div class="option-content">
+                <label>
+                    <img src="img/atm.svg" alt="ATM Icon"> 
+                    <div class="option-details">
+                        ATM withdrawals
+                        <span class="subtitle">Withdraw cash from ATMs</span>
+                    </div>
+                </label>
+                <div class="toggle" onclick="toggle(this)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggle(element) {
+        element.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
